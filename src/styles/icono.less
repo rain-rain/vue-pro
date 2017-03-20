@@ -1,0 +1,34 @@
+.icono-bars,.icono-hamburger {
+  width: 16px;
+  height: 2px;
+  box-shadow: inset 0 0 0 32px,0 -6px,0 6px;
+  margin: 7px 7px
+}
+[class*=icono-] {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-style: normal;
+  text-align: left;
+  text-indent: -9999px;
+  direction: ltr
+}
+[class*=icono-]:after,[class*=icono-]:before {
+  content: '';
+  pointer-events: none
+}
+[class*=icono-][class*=Circle] {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 2px
+}
+[class*=icono-][class*=Square] {
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  margin: 2px
+}
+[class*=icono-],[class*=icono-] * {
+  box-sizing: border-box
+}
